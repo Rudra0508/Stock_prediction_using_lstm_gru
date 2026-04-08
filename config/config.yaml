@@ -1,0 +1,26 @@
+stocks:
+  tickers:
+    - RELIANCE.NS
+    - TCS.NS
+    - INFY.NS
+    - HDFCBANK.NS
+    - ICICIBANK.NS
+    - WIPRO.NS
+    - BAJFINANCE.NS
+    - SBIN.NS
+    - MARUTI.NS
+    - HINDUNILVR.NS
+
+  start_date: "2019-01-01"
+  end_date: "2025-01-01"
+  interval: "1d"
+
+paths:
+  raw_data_dir: "artifacts/raw_data"
+  combined_data_path: "artifacts/raw_data/combined_dataset.csv"
+  logs_dir: "logs"
+
+ingestion:
+  max_retries: 3
+  retry_delay_seconds: 5
+  min_rows_threshold: 200
